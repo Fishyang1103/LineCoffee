@@ -2,10 +2,12 @@
 import 'dotenv/config'
 // 引用 line 套件
 import linebot from 'linebot'
-// 北、中、南 隨機咖啡店
+// 北、中、南 隨機八家咖啡廳
 import city from './commends/city.js'
-// 定位距離咖啡店
+// 距離最近的五家咖啡廳
 import place from './commends/place.js'
+// 傳送定位的按鈕
+import location from './template/location.js'
 
 // https://www.npmjs.com/package/linebot
 const bot = linebot({
@@ -18,10 +20,13 @@ bot.listen('/', process.env.PORT || 3000, () => {
   console.log('機器人啟動')
 })
 
+// 訊息事件
 bot.on('message', async (event) => {
   if (event.message.type === 'location') {
     place(event)
   } else if (event.message.type === 'text') {
-    city(event)
+    if (event.message.type === '咖啡廳') {
+      city(event)
+    } else { location(event) }
   }
 })

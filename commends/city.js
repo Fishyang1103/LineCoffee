@@ -83,7 +83,7 @@ export default async (event) => {
                 },
                 {
                   type: 'text',
-                  text: data[random].tasty + '' || 'xx',
+                  text: data[random].tasty + '',
                   size: 'xs',
                   color: '#8c8c8c',
                   margin: 'md',
