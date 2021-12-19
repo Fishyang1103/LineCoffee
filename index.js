@@ -22,11 +22,11 @@ bot.listen('/', process.env.PORT || 3000, () => {
 
 // 訊息事件
 bot.on('message', async (event) => {
-  if (event.message.type === 'location') {
+  if (event.message.type === 'text') {
+    if (event.message.text === '咖啡廳') {
+      location(event)
+    } else { (city(event)) }
+  } else if (event.message.type === 'location') {
     place(event)
-  } else if (event.message.type === 'text') {
-    if (event.message.type === '咖啡廳') {
-      city(event)
-    } else { location(event) }
   }
 })
