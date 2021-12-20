@@ -26,7 +26,7 @@ bot.on('message', async (event) => {
     if (event.message.text === '咖啡廳') {
       location(event)
     } else if (event.message.text === '使用說明') {
-      event.reply('Hello🖖 \n歡迎使用此機器人服務\r\r以下為您提供兩種功能：\n◎傳送位置：尋找附近的咖啡廳打發時間\n提供距離最近的五家咖啡廳（五公里內）🤗 \r\r◎下方三個問號：提供\n➤雙北隨機咖啡廳☕\n➤臺中隨機咖啡廳☕\n➤臺南隨機咖啡廳☕\n很多時候沒有目標的前往\n反而有意想不到的驚喜唷🌟')
+      event.reply('Hello🖖 \n歡迎使用此機器人服務\r\r以下為您提供兩種功能：\n◎傳送位置：尋找附近的咖啡廳打發時間，提供距離最近的五家咖啡廳（五公里內）🤗 \r\r◎下方三個問號：\n提供\n➤ 雙北\n➤ 臺中\n➤ 臺南\n這三地區的“隨機咖啡廳”\n很多時候沒有目標的前往\n反而有意想不到的驚喜唷🌟')
     } else { (city(event)) }
   } else if (event.message.type === 'location') {
     place(event)
