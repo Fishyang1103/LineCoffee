@@ -83,7 +83,7 @@ export default async (event) => {
                 },
                 {
                   type: 'text',
-                  text: data[random].tasty + '',
+                  text: data[random].tasty !== 0 ? data[random].tasty + '' : '未有評價',
                   size: 'xs',
                   color: '#8c8c8c',
                   margin: 'md',
@@ -117,50 +117,27 @@ export default async (event) => {
                     }
                   ]
                 },
-                // {
-                //   type: 'box',
-                //   layout: 'vertical',
-                //   contents: [
-                //     {
-                //       type: 'text',
-                //       text: '💈 營業時間',
-                //       size: 'sm',
-                //       color: '#336666',
-                //       weight: 'bold',
-                //       offsetTop: 'sm'
-                //     },
-                //     {
-                //       type: 'text',
-                //       text: data[random].open_time || '尚未提供，請看官網',
-                //       size: 'xs',
-                //       offsetTop: 'xs',
-                //       margin: 'sm'
-                //     }
-                //   ]
-                // },
-                // {
-                //   type: 'box',
-                //   layout: 'vertical',
-                //   contents: [
-                //     {
-                //       type: 'text',
-                //       text: '插座',
-                //       wrap: false,
-                //       contents: [
-                //         {
-                //           type: 'span',
-                //           text: '插座',
-                //           size: 'sm',
-                //           color: '#336666',
-                //           weight: 'bold'
-                //         },
-                //         {
-                //           type: 'span',
-                //           text: data[random].socket,
-                //           size: 'xs'
-                //         }
-                //       ]
-                //     },
+                {
+                  type: 'box',
+                  layout: 'vertical',
+                  contents: [
+                    {
+                      type: 'text',
+                      text: '💈 營業時間',
+                      size: 'sm',
+                      color: '#336666',
+                      weight: 'bold',
+                      offsetTop: 'sm'
+                    },
+                    {
+                      type: 'text',
+                      text: data[random].open_time || '尚未提供，請看官網',
+                      size: 'xs',
+                      offsetTop: 'xs',
+                      margin: 'sm'
+                    }
+                  ]
+                },
                 {
                   type: 'button',
                   action: {
@@ -171,8 +148,6 @@ export default async (event) => {
                   margin: 'sm',
                   height: 'sm'
                 }
-                //   ]
-                // }
               ]
             }
           ],
@@ -181,13 +156,6 @@ export default async (event) => {
         }
       })
     }
-    // console.log(data[random])
-    // console.log(data[random])
-    // if (distanceResults.length !== 0) {
-    //   event.reply(flex)
-    // } else {
-    //   event.reply('附近沒有 可惜')
-    // }
     console.log(data)
     event.reply(city)
   } catch (error) {
