@@ -9,16 +9,14 @@
 <hr>
 
 ## 導覽
-*  <a href="#friend">加入好友</a>
-*  使用介紹
-*  API資料來源
+*  [加入好友](#friend)
+*  [使用介紹](#introduce)
+*  [API資料來源](#source)
 
 <hr>
 
-## 加入好友
+## <a id="friend">加入好友</a>
 *  透過 ID： @756jfgsd
-<br>
-<br>
 *  點擊：
 <a href="https://lin.ee/K1eiL57"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="36" border="0"></a>
 <br>
@@ -30,19 +28,16 @@
 
 <hr>
 
-## 使用介紹
+## <a id="introduce">使用介紹</a>
 1. 點選“使用說明”
-<br>
 <img src="./img/1.PNG" width = "250" height = "500">
 <img src="./img/2-1.PNG" width = "250" height = "500">
-<br>
 <br>
 2. 傳送位置，可回傳距離最近的五家咖啡廳
 <img src="./img/2-2.PNG" width = "250" height = "500">
 <img src="./img/3.PNG" width = "250" height = "500">
 <img src="./img/4.PNG" width = "250" height = "500">
 <img src="./img/5.PNG" width = "250" height = "500">
-<br>
 <br>
 3. 點地區隨機選項，可回傳該地區隨機的八家咖啡廳
 <br>
@@ -63,5 +58,5 @@
 
 <hr>
 
-## API 資料來源
+## <a id="source">API 資料來源</a>
 [Cafe Nomad](https://cafenomad.tw/developers/docs/v1.2)
