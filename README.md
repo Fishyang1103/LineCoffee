@@ -19,11 +19,7 @@
 *  透過 ID： @756jfgsd
 *  點擊：
 <a href="https://lin.ee/K1eiL57"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="36" border="0"></a>
-<br>
-<br>
 *  掃描 QR Code：
-<br>
-<br>
 <img src="https://qr-official.line.me/sid/M/756jfgsd.png">
 
 <hr>
@@ -41,17 +37,12 @@
 <br>
 3. 點地區隨機選項，可回傳該地區隨機的八家咖啡廳
 <br>
-<br>
 點選“雙北”
 <br>
 <img src="./img/6.PNG" width = "250" height = "500">
-<br>
-<br>
 點選“臺中”
 <br>
 <img src="./img/7.PNG" width = "250" height = "500">
-<br>
-<br>
 點選“臺南”
 <br>
 <img src="./img/8.PNG" width = "250" height = "500">
